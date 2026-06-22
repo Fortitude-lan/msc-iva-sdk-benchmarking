@@ -1,1 +1,1 @@
-# msc-iva-sdk-benchmarking
+# MSc IVA SDK Benchmarking
