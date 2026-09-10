@@ -377,31 +377,6 @@ If recording is not covered or a participant does not consent, collect written o
 
 ---
 
-## 18. Short participant invitation
-
-### English
-
-Hi, I am looking for one participant for a short developer study for my MSc dissertation. The study involves using a prepared Unity project and the IVA SDK to create a minimal virtual stand-in. It will take around 45–50 minutes and focuses on the development process rather than testing your programming ability. You should be 18+ and have basic Unity/C# experience. Participation is voluntary, and the dissertation will use an anonymised participant ID. Please let me know if you may be available.
-
-### Chinese
-
-你好，我正在为硕士论文招募一名开发者参加一个简短实验。你需要使用我准备好的Unity项目和IVA SDK，完成一个最小的"虚拟替身"任务。实验大约45–50分钟，主要观察SDK的使用过程，不是考察你的编程水平。参与者需年满18岁，并具备基本的Unity/C#经验。参与完全自愿，论文中只会使用匿名编号。如果你愿意参加，可以告诉我你的时间。
-
----
-
-## 19. Meeting summary for Florian
-
-> I have now completed the preliminary RQ1 capability assessment and used its findings to finalise the RQ4 usage study. The task is specifically about building a minimal doppelgänger rather than a generic virtual agent. It asks participants to create a working agent, configure an avatar and stand-in identity, add one manually controlled greeting gesture, and verify the result. I will use three descriptive cases: myself as the experienced case, one intermediate SDK user, and one Unity developer who is new to the SDK. Each session will take about 45 to 50 minutes. I will record task completion, approximate time, blockers, resources, assistance, the final artefact, and a short post-task interview. I will not make statistical claims from the three participants.
-
-### Points to confirm in the meeting
-
-1. Is the minimal stand-in task sufficiently specific to the doppelgänger use case?
-2. Is the three-case design acceptable if the results are framed descriptively rather than statistically?
-3. Is it acceptable to exclude installation and API account setup from the participant task and report those issues separately in the researcher development journal?
-4. Does the existing ethics approval cover think-aloud observation, final artefact collection and optional recording?
-
----
-
 ## 20. Methodological basis
 
 - Ledo et al. (2018), *Evaluation Strategies for HCI Toolkit Research*: usage evaluations examine who can use a toolkit, which tasks remain difficult, and combine task performance with observation, Likert feedback and open-ended interviews.
