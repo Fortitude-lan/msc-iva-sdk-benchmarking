@@ -1,3 +1,4 @@
+## Condition ABC overview
 
 ### **Condition A - Wizard-of-Oz**
 #### What gets built
@@ -10,12 +11,12 @@ A minimal Unity UI panel with preset buttons, each calling one public API method
 **Three separate pieces of evidence**:
 1. **One-off "does it work" checks** — pressing the Speak / gesture / expression buttons once each confirms RQ1 **C2.1, C3.1, C3.2**. No repeated trials needed for this.
 2. **The build process and outcome as a whole** — how much of a full manual-control path could be assembled from public API alone, how long it took, and the fact that no native operator UI existed to begin with, feeds RQ1 **C5.1, C5.2, C9.5**.
-3. **The Fixed-Question Benchmark** — the 10-trial procedure in `RQ2.md` ,it feeds RQ2's own **Constraint reliability, Latency, Predictability, Reproducibility**.
+3. **The Fixed-Question Benchmark** — the 10-trial procedure in `RQ2.md`, it feeds RQ2's own **Latency** (decision delay + execution delay, reported separately). Predictability and Reproducibility are **assumed by construction** for this condition, not measured by this benchmark — the 10 trials only sanity-check for unintended events (wrong button, wrong line) via the Notes column. Constraint reliability is **not applicable** to this condition — there is no constraint mechanism to test.
 
 ---
 ### **Condition B - Constrained AI**
 #### What gets built
-Edit the `additionalDescription` field passed into GeminiLiveAgent.`BuildSystemPrompt()`. 
+Edit the `additionalDescription` field passed into GeminiLiveAgent.`BuildSystemPrompt()`.
 **Create a constraint text, like skill prompt**
 Example constraint text:
 ```
@@ -29,11 +30,9 @@ HARD RULES:
 **Three separate pieces of evidence**:
 1. **One-off "does it work" check** — confirming the `additionalDescription` field exists and is actually passed into the system prompt feeds RQ1 **C5.3**.
 2. **Static code inspection** — checking whether the SDK does anything beyond raw prompt-text injection to enforce the rule (validation, retry, structured output) feeds RQ1 **C5.4**.
-3. **The Constraint Reliability Test** — 45 trials in `RQ2.md`, scored per rule as reproducible-break counts. This feeds RQ1 **C5.5, C5.6** (imported directly) and RQ2's own **Latency, Predictability, Reproducibility**.
+3. **The Constraint Reliability Test** — 45 trials in `RQ2.md`, scored per rule as reproducible-break counts. This feeds RQ1 **C5.5, C5.6** (imported directly) and RQ2's own **Constraint violation rate** (the core measured metric for this condition) and **Latency** (via timestamps taken on the same 45 trials — no separate latency run is needed). Predictability and Reproducibility are **not independently measured** for this condition — the 45-trial reproducible-break table is the closest available evidence; see `RQ2.md` §3 for why a standalone score isn't produced.
+
 ---
-
-
-
 
 ### **Condition C - Fully Autonomous AI**
 
